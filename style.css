@@ -1,0 +1,93 @@
+@font-face {
+    font-family: eraser;
+    src: url(eraser.ttf);
+}
+html,body{
+    background-color: black;
+    overflow: hidden;
+    font-family: 'eraser';
+    color: aliceblue;
+    
+}
+#heading-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+#main-content{
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+#grid-area{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    align-items: center;
+}
+#grid-area-horizontal{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(90deg);
+    z-index: 0;
+}
+.cell{
+    margin:20px ;
+}
+.cell2{
+    opacity: 0;
+}
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  
+
+}
+
+
+.right{
+    flex: 0 0 auto;
+    margin: -20px;
+}
+
+img{    
+    height: 300px;
+
+}
+#grid-area-horizontal > .right > img{
+    height: 350px;
+    margin: 20px;
+}
+
+canvas{
+    border-radius: 100%;
+    padding: 10px;
+}
+
+/* .grid-area:nth-child(even) {
+    width:10px /* Adjust the width as needed 
+  } */
+#button-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'eraser';
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+}
+#reset:hover{
+    cursor: pointer;
+}
